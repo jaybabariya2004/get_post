@@ -18,4 +18,8 @@ const finduser = (userName) => {
     return userSchema.findOne({ userName })
 }
 
-module.exports = { adduser,getuser,findUserd,finduser }
+const deleteUser = (id) => {
+    return userSchema.findByIdAndDelete(id)
+}
+
+module.exports = { adduser, getuser, findUserd, finduser, deleteUser }

@@ -17,11 +17,11 @@ app.set('view engine', 'ejs')
 // routes
 app.use('/v1', routes)
 
-app.get('/', async (req, res) => {
-    let fUser = await userServices.getuser()
-    console.log(fUser, "fUser")
-    res.render('.')
-})
+// app.get('/', async (req, res) => {
+//     let fUser = await userServices.getuser()
+//     console.log(fUser, "fUser")
+//     res.render('.')
+// })
 
 // db connect
 connectDB()
